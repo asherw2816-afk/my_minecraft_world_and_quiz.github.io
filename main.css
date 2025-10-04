@@ -1,0 +1,103 @@
+#main-title {
+    background-color: purple;
+    color: orange;
+    text-align: center;
+    font-size: 22px;
+    padding: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#main-pic{
+    display: block;
+    margin: auto;
+    width: 40%;
+    margin-top: 10.05px;
+    border: solid 12.5px orchid;
+    border-radius: 100px;
+}
+
+#main-table{
+   margin: auto;
+   background-color: chartreuse;
+   width: 90%;
+   margin-top: 30px;
+   font-size: 20px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: cornflowerblue;
+   text-align: center;
+}
+
+#main-table td{
+    padding: 20px;
+}
+
+#header-row{
+    background-color: bisque;
+    color: cadetblue;
+    font-weight: 800;
+}
+
+iframe{
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+}
+
+.fade-in{
+    background-color: blueviolet;
+    font-size: 36px;
+    text-align: center;
+    font-family: cursive;
+    padding: 30px;
+    color: lawngreen;
+    opacity: 0;
+    animation: fade-in-anim 2s ease-in-out;
+    animation-iteration-count: infinite;
+    height: 100px;
+}
+
+@keyframes fade-in-anim {
+    from{
+        opacity: 0;
+        font-size: 0px;
+    }
+
+    to{
+        opacity: 1;
+        font-size: 40px;
+    }
+}
+
+.color-changing{
+    background-color: black;
+    font-size: 36px;
+    text-align: center;
+    font-family: fantasy;
+    padding: 30px;
+    color: darkgoldenrod;
+    height: 100px;
+    animation: color-anim 0.5s infinite;
+}
+
+@keyframes color-anim {
+    0%{color: #f26507;}
+    20%{color: #0722f2;}
+    40%{color: #07f22a;}
+    60%{color: #f207b3;}
+    80%{color: #9d03fc;}
+    100%{color: #fc0303;}
+}
+
+.glide-in-out img{
+    width: 30%;
+    margin-top: 30px;
+    animation: glide-x-anim 5s ease-in-out infinite;   
+}
+
+@keyframes glide-x-anim {
+    0%{transform: translateX(-100%);}
+    20%{transform: translateX(0%);}
+    60%{transform: translateX(300%);}
+    80%{transform: translateX(0%);}
+    100%{transform: translateX(-100%);}
+}

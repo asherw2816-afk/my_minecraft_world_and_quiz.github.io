@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+
+  <title> Quiz and more</title>
+  <link rel="stylesheet" href="Quiz.css">
+</head>
+
+<body>
+  <div class="quiz-title">
+    🎮Nintendo Quiz🎮
+  </div>
+
+  <div class="quiz-container">
+    <!-- progress bar -->
+    <div class="progress-bar-bg">
+      <div class="progress-bar-fill" id="progress-bar-fill"></div>
+    </div>
+
+    <!-- question label -->
+    <div class="question" id="question">
+      Questions will be displayed here. Press START to begin!
+    </div>
+
+    <!-- difficulty level menu -->
+    <select class="drop-down-menu" id="drop-down-menu">
+      <option value="1"> easy 😃 </option>
+      <option value="2"> medium 😣 </option>
+      <option value="3"> hard 🤬 </option>
+      <option value="4"> murder 👹 </option>
+    </select>
+
+    <!-- option buttons -->
+    <div class="option-container" id="option-container">
+
+    </div>
+
+    <!-- score/feedback label -->
+    <div class="Score-label" id="Score-label">
+      You scored 0 points!
+    </div>
+    <div class="Feedback-label" id="Feedback-label">
+      N.A.
+    </div>
+
+    <!-- start button -->
+    <button class="start-btn" id="start-btn"> START </button>
+  </div>
+  <div class="timer">
+    <span id="timer-label"> 15 </span>
+  </div>
+
+  <!--BGM Selector-->
+  <select class="BGM-selector" id="BGM-selector">
+    <option value="">--please select a song--</option>
+    <option value="PigstepMinecraft.mp3"> Pigstep Minecraft </option>
+    <option value="TNT.mp3"> TNT </option>
+    <option value="know.mp3"> Let Em' know - Cube Kid </option>
+  </select>
+
+  <button class="music-btn" id="music-btn"> 🔈 Music On </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
